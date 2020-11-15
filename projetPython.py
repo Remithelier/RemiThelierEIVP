@@ -1,4 +1,19 @@
-Colonne_Noise=[0,50,45,90,56,85,10,23,69,75,84,25,120,32,1,98]
+
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+import csv
+
+data = pd.read_csv(open('C:\Users\remit\OneDrive\Bureau\EIVP\Programmation\ProjetPython'),sep=';')
+print (data)
+
+noise=data["noise"].tolist()
+print(noise)
+temp=data["temp"].tolist()
+hum=data["humidity"].tolist()
+lum=data["lum"].tolist()
+co2=data["co2"].tolist()
+date=data["sent_at"].tolist()
 
 def maximum(Colonne_Noise):
     max=Colonne_Noise[0]
