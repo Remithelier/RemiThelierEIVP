@@ -12,7 +12,7 @@ import csv
 import statistics as st
 import datetime
 
-data = pd.read_csv(r"C:\Users\remit/ProjetAlgo/EIVP_KM.csv",sep=';')
+data = pd.read_csv(r'EIVP_KM.csv',sep=';')
 
 noise=data["noise"].tolist()
 temperature=data["temp"].tolist()
